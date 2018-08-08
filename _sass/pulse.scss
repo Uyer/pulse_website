@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// Import partials.
+@import "pulse/base";
+@import "pulse/nav";
+@import "pulse/home";
+@import "pulse/streaming";
+@import "pulse/about";
+@import "pulse/label";
+@import "pulse/radio";
+@import "pulse/eventos";
+@import "pulse/contacto";
+@import "pulse/registrate";
+@import "pulse/artistas";
+@import "pulse/footer";
+@import "pulse/typography";
+@import "pulse/fotos";
+@import "mediaelementplayer.min.scss";
+@import "pulse/loader.scss";
+
+
+.mejs__overlay-button {
+	background-image: url("../assets/images/mejs-controls.svg");
+}
+.mejs__overlay-loading-bg-img {
+	background-image: url("../assets/images/mejs-controls.svg");;
+}
+.mejs__button > button {
+	background-image: url("../assets/images/mejs-controls.svg");
+}

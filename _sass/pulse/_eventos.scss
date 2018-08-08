@@ -1,0 +1,27 @@
+#eventos {
+     background-image: url("/assets/images/bg-about.jpg");
+    background-repeat: none;
+    background-size: cover;
+    min-height: calc(100vh - 148px);
+
+    .titulo-eventos {
+        color: rgb(6,119,255);
+        margin-top: 80px;
+    }
+
+    #slider-wrapper {
+        width: 50%;
+        margin: auto;
+    }
+
+    .slider-for .slick-initialized .slick-slider {
+        border-color: red;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+  .titulo-eventos {
+      margin-top: 10px;
+  }
+}

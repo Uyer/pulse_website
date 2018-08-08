@@ -1,0 +1,37 @@
+#registro {
+  min-height: calc(100vh - 148px);
+  background-image: url("/assets/images/bg-about.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+
+  .form-wrapper {
+    background-color: rgb(197, 197, 198);
+    margin-top: 10%;
+    width: 45%;
+    
+    input {
+      border-radius: 0;
+    }
+
+    .error {
+      color: rgb(194, 0, 0);
+    }
+
+  }
+  
+  #year, #month, #day {
+    margin-right: 5px;
+  }
+ 
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .container-fluid {
+    padding: 0;
+  }
+  #registro .form-wrapper {
+    width: 100%;
+  }
+} 

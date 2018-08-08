@@ -1,0 +1,47 @@
+#a_wrapper {
+  background-image: url("/assets/images/about-bg2.jpg"); 
+  background-size: cover;
+  min-height: calc(100vh - 148px);
+  width: 100%;
+}
+
+#about-texto {
+  margin: 20% auto;
+  text-transform: uppercase;
+  padding: 3%;
+  max-width: 60%;
+  color: #000;
+  background-color: rgba(197,197,198,0.9);
+
+  p  {
+    padding: 5%;
+  }  
+}
+
+@media (min-resolution: 192dpi) and (min-width:1800px) { 
+
+  #about-texto {
+    padding: 2%;
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  #a_wrapper #about-texto {
+   max-width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    padding: 0;
+  }
+  #a_wrapper { 
+    background-image: url("/assets/images/about-bg2-mb.jpg");
+  #about-texto {
+    max-width: 90%;
+  }
+} 
+} 

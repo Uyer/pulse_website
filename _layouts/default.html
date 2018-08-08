@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+  {%- include header.html -%}
+    <!--<div class="loader-body" id="loader">
+      <div class="row h-100">
+      <div class="loader mx-auto"></div>
+    </div>
+  </div>-->
+  <main class="main">
+        
+        {{ content }}
+
+    </main>
+
+
+  {%- include footer.html -%}
+
+    <script src="{{'/assets/vendor/jquery.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/vendor/popper.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/vendor/bootstrap.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/vendor/plugins.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/vendor/slick/slick.min.js' | absolute_url}}"></script>
+    <script src="/assets/js/scrollreveal.min.js"></script>
+    
+    <script src="{{'/assets/js/vids.js' | absolute_url}}"></script>
+    <script src="{{'/assets/js/scripts.js' | absolute_url}}"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="/assets/js/galeria.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="/assets/js/mediaelement-and-player.min.js"></script>
+    <script src="/assets/js/loader.js"></script>
+  </body>
+
+</html>

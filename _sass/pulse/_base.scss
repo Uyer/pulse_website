@@ -1,0 +1,94 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(197, 197, 198);
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  }
+
+  main{
+    min-height: calc(100vh - 148px);
+  }
+  .nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden;
+  } 
+
+a {
+  color: #c5c5c6 !important;
+  &:hover {
+    color: rgb(6, 119, 255) !important;
+    transition: color 600ms;
+  }
+}
+
+h4, h5 {
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  transform: scaleY(1.03);
+  font-size: 1.3em;
+}
+
+.btn {
+  //border-radius: 3%;
+  border-width: 0.15vh;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 0%;
+  font-size: 0.7rem;
+}
+
+
+a:active {
+  color: rgb(6, 119, 255);
+}
+
+//Scrollbar Styling //
+
+::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+  height: 10px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgb(45, 45, 46);
+  border-radius: 4px;
+  
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgb(130, 130, 131);
+  border-radius: 4px;
+}
+
+.artist-img, .vinyl-img, .sc-player, .btn, .bio-info, .bio-text{ 
+  visibility: hidden; 
+}
+
+.desc-titulo {
+  letter-spacing: 0.3em;
+  transform: scaleY(1.03);
+}
+
+  .desc-titulo, p {
+  font-weight: 600;
+ }
+
+ #about-section,.artist-img,.artist-section,.stream-desc,.desc-titulo,.stream-title,.vinyl-img,.label-desc, .sc-player, .btn, .bio-info, .bio-text, #about-texto,.home_wrap, #a_wrapper,.form-wrapper,#radio,.tipo-radio,.radio-cuadro,.label-title,.titulo-foto,.datos-contacto {
+   visibility: hidden;
+ }
+
+
+@media (min-resolution: 192dpi) and (min-width:1800px) { 
+  main {
+    width: 80%;
+    margin: auto;
+  }
+  body {
+    background-color: rgb(20, 20, 20);
+  }
+}

@@ -1,0 +1,42 @@
+#contacto {
+  min-height: calc(100vh - 148px);
+  background-image: url("/assets/images/bg-about.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+
+  .form-wrapper{
+    background-color: rgb(197, 197, 198);
+    margin-top: 10%;
+    width: 45%;
+    
+    input {
+      border-radius: 0;
+    }
+
+  }
+
+ #mensaje {
+   height: 110px;
+ }
+
+}
+
+@media screen and (max-width: 850px){
+  .container-fluid {
+    padding: 0;
+  }
+  #contacto .form-wrapper {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    padding: 0;
+  }
+  #contacto .form-wrapper {
+    width: 100%;
+  }
+
+} 

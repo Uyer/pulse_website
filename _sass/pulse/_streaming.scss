@@ -1,0 +1,107 @@
+  .stream-title {
+  color: rgb(6,119,255);
+  font-weight: 500;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 0;
+
+}
+
+.stream-desc {
+  width: 98%;
+}
+
+#stream-section {
+  margin: 25px auto 80px;
+  width: 80%;
+  padding: 70px 100px 70px 80px;
+  background-color: rgb(26, 26, 27);
+  color: rgb(197, 197, 198);
+
+  #vid-thumbs {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .img-thumbnail {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .vid_info {
+    background-color: rgb(26, 26, 27);
+    font-weight: 600;
+  }
+
+  .vid-data {
+    color:rgb(197, 197, 198);
+  }
+
+  // MODAL STYLING //
+  .modal-dialog {
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  .modal-body {
+    position: relative;
+    padding: 0px;
+  }
+  .close {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+// Queries //
+
+@media (min-resolution: 192dpi) and (min-width:1800px) { 
+  main {
+    background-color: #c5c5c6;
+  }
+
+  #stream-section {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #stream-section {
+    margin: 10px auto 20px;
+    padding: 20px 30px 20px 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #stream-section {
+    margin: 10px auto 20px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .stream-title {
+    padding-top: 15px;
+  }
+
+  .streaming-text {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+
+  #vid-thumbs::-webkit-scrollbar {
+    display: none;
+  }
+}

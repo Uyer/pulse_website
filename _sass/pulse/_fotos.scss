@@ -1,0 +1,49 @@
+#fotos {
+    background-image: url("/assets/images/bg-about.jpg");
+    background-repeat: none;
+    background-size: cover;
+    min-height: calc(100vh - 148px);
+
+    .titulo-foto {
+        color: rgb(6,119,255);
+        margin-top: 80px;
+    }
+
+    #fotos-section {
+        width: 80%;
+        padding: 70px 100px 70px 100px;
+        color: rgb(197, 197, 198);
+    }
+
+    #galeria-fotos {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 650px;
+        }
+      
+        a {
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+    .img-thumbnail {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+      }
+
+}
+
+@media screen and (max-width: 450px) {
+    #fotos  {
+        #fotos-section {
+            padding: 15px 0 0 0;
+            width: 100%;
+            overflow: visible;
+         
+        }
+        .titulo-foto {
+            margin-top: 40px;
+        }
+    }
+}

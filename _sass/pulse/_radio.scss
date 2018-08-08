@@ -1,0 +1,57 @@
+
+#radio {
+    min-height: calc(100vh - 148px);
+    background-image: url(../../assets/images/fondo_raio.jpg);
+    background-size: cover;
+
+    .radio-text {
+        width: 40%;
+        color: rgb(197, 197, 198);
+    }
+
+    .sc-radio-playlist {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 879px){
+    #radio {
+        .radio-text{
+            width: 70%;
+        }
+    }
+  }
+
+@media screen and (max-width: 768px){
+    #radio {
+        .radio-text{
+            width: 70%;
+        }
+        .sc-radio-playlist {
+            width: 70%;
+        }
+    }
+  }
+
+@media screen and (max-width: 465px){
+    #radio {
+    .radio-cuadro {
+        width: 95%;
+    }
+
+    .listen-online {
+        width: 100px;
+    }
+
+    .radio-text {
+        width: 80%;
+    }
+
+    .sc-radio-playlist {
+        width: 80%;
+        height: 320px;
+    }
+    
+}
+} 

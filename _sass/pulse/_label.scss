@@ -1,0 +1,45 @@
+.label-wrapper {
+  background-image: url("/assets/images/bg-artistas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 120px);
+  padding-top: 30px;
+  
+  #label {
+    width: 80%;
+    background-color: rgba(197, 197, 198, 0.9);
+    padding: 20px 10% 50px;
+  }
+  .label-title {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .img-fluid {
+    width: 100%;
+  }
+}
+
+//Queries //
+
+/*@media (-webkit-min-device-pixel-ratio: 2) and (min-width:1800px) { 
+  .label-wrapper #label {
+    width: 50%;
+  }
+}
+*/
+
+@media screen and (max-width: 768px){
+  .vinyl-img {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    padding: 0;
+  }
+  .label-wrapper #label {
+    width: 100%;
+  }
+} 

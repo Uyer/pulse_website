@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: "/pulse_member/"
+---
+<div class="container-fluid" id="registro">
+  <div class="row h-100">
+    <div class="col-sm-12 d-flex">
+      <div class="form-wrapper mx-auto p-5">
+        <h4 class="font-weight-bold pb-3" style="color: rgb(6, 119, 255);">PULSE MEMBER</h4>
+        <form id="form_registro" action="../php/signup.php" method="POST" autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-control" id="nombre" name="nombre"  placeholder="NOMBRE">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="apellido" name="apellido"  placeholder="APELLIDO">
+          </div>
+            <div class="form-group">
+            <input class="form-control" id="date_birth" name="fecha_nac" min='1899-01-01' max='2050-12-31' placeholder="FECHA NACIMIENTO" type="date">
+            </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="E-MAIL">
+          </div>
+          <div class="form-group d-flex justify-content-center">
+             <div class="g-recaptcha" data-sitekey="6LfDF2AUAAAAAONkYF32PpDy48N5uAVZ8aoyn-EE"></div>
+            </div>
+          <div class="form-group d-flex justify-content-center">
+            <button type="submit" class=" mt-3 btn btn-dark align-self-center" name="submit">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

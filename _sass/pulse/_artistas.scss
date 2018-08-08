@@ -1,0 +1,147 @@
+.artist-wrapper {
+  background-image: url("/assets/images/bg-artistas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(26, 26, 27, 0.7);
+  min-height: calc(100vh - 148px);
+  padding-top: 30px;
+
+  .artist-title {
+    padding-bottom: 30px;
+  }
+
+  .artist-text {
+    width: 88%;
+  }
+
+  .artist-section {
+    margin: 1rem auto 15rem;
+    width: 80%;
+    padding: 60px 10px 60px 10px;
+    background-color: rgba(197, 197, 198, 0.9);
+
+    .artist-img {
+      position: relative;
+      max-width: 60%;
+      margin: auto;
+    }
+
+    .img-thumbnail {
+      background-color: transparent;
+      position: relative;
+      border: none;
+      border-radius: 0;
+      margin: auto;
+      width: 100%;
+      //display: block;
+    }
+
+    //overlay css effect//
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(26, 26, 27, 0.7);
+  }
+
+  .artist-img:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-text { 
+    letter-spacing: 0.3em;
+    transform: scaleY(1.03);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(6,119,255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+  }
+}
+
+// ARTIST BIO //
+.artist-bio {
+  margin: 25px auto 10%;
+  width: 80%;
+  padding: 60px 30px 60px 30px;
+  background-color: rgba(197, 197, 198, 0.7);
+  position: relative;
+
+  .bio-info{
+    position: relative;
+  }
+  
+  .bio-img {
+    padding-top: 10px;
+    margin: auto;
+    max-width: 70%;
+    position: relative;
+  }
+  .bio-text {
+    position: sticky;
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    transform: scaleY(0.95);
+    font-weight: 500;
+    overflow: auto;
+    text-transform: uppercase;
+    padding: 0 15px 0 0;
+    max-height: 600px;
+    max-width: 100%;
+  }
+ 
+}
+
+// Media Queries
+
+/*media (-webkit-min-device-pixel-ratio: 2) and (min-width:1800px) { 
+  .artist-wrapper .artist-section, .artist-bio {
+    width: 70%;
+  }
+}*/
+
+
+@media screen and (max-width: 768px){
+  .artist-wrapper .artist-section {
+    margin: 25px auto;
+    width: 90%;
+    padding: 30px 30px 70px 30px;
+    background-color: rgba(197,197,198,0.9);
+  }
+}
+
+@media screen and (max-width: 465px){
+  .artist-wrapper {
+    padding: 10px 20px;
+  }
+  .artist-wrapper .artist-section {
+    margin: auto;
+    width: 95%;
+    background-color: rgba(197,197,198,0.9);
+  }
+
+  .artist-text {
+    padding:0;
+  }
+
+  .artist-bio {
+    margin-top: 0;
+    padding: 20px 0;
+    max-width: 100%;
+  }
+
+  .artist-wrapper .artist-section .artist-img {
+    max-width: 100%;
+  }
+}
