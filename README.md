@@ -1,1 +1,1 @@
-# pulse_website - done with Jekyll
+Static Website - Jekyll
